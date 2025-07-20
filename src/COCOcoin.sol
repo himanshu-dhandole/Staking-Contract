@@ -11,7 +11,7 @@ contract COCOcoin is ERC20, Ownable  {
         stakingContract = _stakingContract ;
     }
 
-    function updateStakingContractAddress (address _stakingContract) isOwner {
+    function updateStakingContractAddress (address _stakingContract) onlyOwner {
         stakingContract = _stakingContract ;
     }
 
